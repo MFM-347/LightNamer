@@ -22,4 +22,4 @@ dev = ["black", "flake8", "bumpver", "isort"]
 Homepage = "https://github.com/MFM-347/LightNamer"
 
 [project.scripts]
-lightnamer = "rencli.cli:cli_main"
+lightnamer = "lightnamer.cli:cli_main"

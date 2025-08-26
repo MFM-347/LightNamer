@@ -166,7 +166,7 @@ python -m unittest discover tests
 
 ## **🤝 Contributing**
 
-We welcome contributions! Please check the [CONTRIBUTING.md](https://github.com/MFM-347/RenCLI/blob/main/CONTRIBUTING.md) for guidelines.
+We welcome contributions! Please check the [CONTRIBUTING.md](https://github.com/MFM-347/LightNamer/blob/main/CONTRIBUTING.md) for guidelines.
 
 ## **👨‍💻 Credits**
 
@@ -176,4 +176,4 @@ Created and maintained by [MFM-347](https://github.com/MFM-347).
 
 This project is licensed under the **MIT License**.
 
-[![License MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/MFM-347/RenCLI/LICENSE)
+[![License MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/MFM-347/LightNamer/LICENSE)

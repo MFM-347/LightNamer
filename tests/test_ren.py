@@ -1,7 +1,7 @@
 import unittest
 from pathlib import Path
 
-from rencli.core import LightNamer
+from lightnamer.core import LightNamer
 
 
 class TestLightNamer(unittest.TestCase):
