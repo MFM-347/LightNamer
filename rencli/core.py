@@ -1,7 +1,5 @@
 import logging
 
-from pyfiglet import Figlet
-
 
 class RenCLI:
     def __init__(self, debug=False):
@@ -16,8 +14,13 @@ class RenCLI:
 
     @staticmethod
     def banner():
-        f = Figlet(font="speed")
-        print(f.renderText("RenCLI"))
+        banner_text = """
+┌───────────────────────────────┐
+|          <RenCLI>             |
+|   Professional File Renamer   |
+└───────────────────────────────┘
+        """
+        print(banner_text)
 
     def sortFn(self, directory, order="old", case_sensitive=False):
         files = [f for f in directory.iterdir() if f.is_file()]
