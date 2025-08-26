@@ -2,14 +2,14 @@ import argparse
 import logging
 from pathlib import Path
 
-from .core import RenCLI
+from .core import LightNamer
 
 
 def cli_main():
-    RenCLI.banner()
+    LightNamer.banner()
     parser = argparse.ArgumentParser(
-        prog="RenCLI",
-        description="RenCLI is a CLI tool for renaming 100s of files in seconds.",
+        prog="LightNamer",
+        description="LightNamer is a CLI tool for renaming 100s of files in seconds.",
         formatter_class=argparse.RawTextHelpFormatter,
     )
     parser.add_argument("base_name", type=str, help="Base name for the renamed files.")
@@ -46,8 +46,8 @@ def cli_main():
         logging.error(f"Error: Directory '{args.directory}' does not exist.")
         exit(1)
 
-    rencli = RenCLI(debug=args.debug)
-    rencli.renFn(
+    lightnamer = LightNamer(debug=args.debug)
+    lightnamer.renFn(
         args.base_name, args.directory, args.order, args.simulate, args.case_sensitive
     )
 

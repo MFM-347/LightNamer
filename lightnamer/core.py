@@ -1,7 +1,7 @@
 import logging
 
 
-class RenCLI:
+class LightNamer:
     def __init__(self, debug=False):
         self.logger = logging.getLogger(__name__)
         self._setup_logging(debug)
@@ -16,7 +16,7 @@ class RenCLI:
     def banner():
         banner_text = """
 ┌───────────────────────────────┐
-|          <RenCLI>             |
+|         <LightNamer>          |
 |   Professional File Renamer   |
 └───────────────────────────────┘
         """

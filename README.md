@@ -1,6 +1,6 @@
-# **RenCLI: CLI & Library for Auto Renaming** 🚀
+# **LightNamer: CLI & Library for Auto Renaming** 🚀
 
-RenCLI is a **Python library and CLI tool** designed to **automate file renaming** in a given directory. It sequentially renames files using a specified **base name**, appending a numeric index while preserving the original file extension.
+LightNamer is a **Python library and CLI tool** designed to **automate file renaming** in a given directory. It sequentially renames files using a specified **base name**, appending a numeric index while preserving the original file extension.
 
 ## **📌 Features**
 
@@ -9,7 +9,7 @@ RenCLI is a **Python library and CLI tool** designed to **automate file renaming
 | **Batch Rename**    | ✔           | Rename multiple files at once with a custom prefix.                           |
 | **Sorting Options** | ✔           | Rename files in alphabetical, newest, or oldest order.                        |
 | **Simulation Mode** | ✔           | Preview renaming changes without modifying files. No actual changes are made. |
-| **Library Support** | ✔           | Use RenCLI as a module in your Python scripts for automation.                 |
+| **Library Support** | ✔           | Use LightNamer as a module in your Python scripts for automation.                 |
 | **Cross-Platform**  | ✔           | Works seamlessly on Windows, macOS, and Linux.                                |
 
 ## **🛠️ Prerequisites**
@@ -19,7 +19,7 @@ RenCLI is a **Python library and CLI tool** designed to **automate file renaming
 
 ### **📦 Required Python Packages**
 
-RenCLI requires the following package(s):
+LightNamer requires the following package(s):
 
 - `pyfiglet` (for CLI banner text)
 
@@ -33,10 +33,10 @@ pip install -r requirements.txt  # Use pip3 on macOS
 
 ### **🔹 Install via Pip**
 
-To install RenCLI as a library:
+To install LightNamer as a library:
 
 ```sh
-pip install rencli
+pip install lightnamer
 ```
 
 ### **🔹 Install from Source**
@@ -44,8 +44,8 @@ pip install rencli
 To install and run the tool from the source code:
 
 ```sh
-(git clone https://github.com/MFM-347/RenCLI.git
-cd RenCLI
+git clone https://github.com/MFM-347/LightNamer.git
+cd LightNamer
 pip install .
 ```
 
@@ -54,7 +54,7 @@ pip install .
 ### **📌 Run the CLI**
 
 ```sh
-rencli <base_name> <directory> [-r <order>] [-s]
+lightnamer <base_name> <directory> [-r <order>] [-s]
 ```
 
 ### **Example**
@@ -62,7 +62,7 @@ rencli <base_name> <directory> [-r <order>] [-s]
 Rename files inside `C:\Users\YourName\Documents\Folder`, using "File" as the base name:
 
 ```sh
-rencli "File" C:\Users\YourName\Documents\Folder
+lightnamer "File" C:\Users\YourName\Documents\Folder
 ```
 
 ### **📂 Given Directory (`C:\Docs`)**
@@ -76,7 +76,7 @@ summary.pdf
 ### **🏷️ Renaming Command**
 
 ```sh
-rencli "Document" C:\Docs -r alphabet
+lightnamer "Document" C:\Docs -r alphabet
 ```
 
 ### **📝 Output**
@@ -101,14 +101,14 @@ Document-3.txt
 | `--case-sensitive`    | Sorts filenames in case-sensitive mode.      |
 | `--debug`             | Enables debug logging.                       |
 
-## **📦 Using RenCLI as a Library**
+## **📦 Using LightNamer as a Library**
 
 ### **🔹 Installed Library Usage**
 
-If you have installed RenCLI via `pip`, you can use it in your Python scripts as follows:
+If you have installed LightNamer via `pip`, you can use it in your Python scripts as follows:
 
 ```python
-from rencli import renFn
+from lightnamer import renFn
 from pathlib import Path
 
 directory = Path("C:/Users/YourName/Documents/Folder")
@@ -120,7 +120,7 @@ renFn(base_name="Document", directory=directory, order="alphabet", simulate=Fals
 If running directly from the cloned source repository:
 
 ```python
-from rencli import renFn
+from lightnamer import renFn
 from pathlib import Path
 
 directory = Path("C:/Users/YourName/Documents/Folder")
@@ -132,7 +132,7 @@ renFn(base_name="Document", directory=directory, order="alphabet", simulate=Fals
 If you only need to **get sorted files** without renaming:
 
 ```python
-from rencli import sortFn
+from lightnamer import sortFn
 from pathlib import Path
 
 directory = Path("/path/to/files")

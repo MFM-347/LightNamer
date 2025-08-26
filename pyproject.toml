@@ -2,9 +2,9 @@
 requires = ["setuptools", "wheel"]
 
 [project]
-name = "rencli"
+name = "lightnamer"
 version = "1.0.0"
-description="RenCLI is a CLI tool for renaming 100s of files in seconds."
+description="LightNamer is a CLI tool for renaming 100s of files in seconds."
 readme = "README.md"
 authors = [{ name = "Farhan Madni", email = "madnifm347@outlook.com" }]
 license-files = ["LICENSE*"]
@@ -19,7 +19,7 @@ requires-python = ">=3.9"
 dev = ["black", "flake8", "bumpver", "isort"]
 
 [project.urls]
-Homepage = "https://github.com/MFM-347/Ren.py"
+Homepage = "https://github.com/MFM-347/LightNamer"
 
 [project.scripts]
-rencli = "rencli.cli:cli_main"
+lightnamer = "rencli.cli:cli_main"
