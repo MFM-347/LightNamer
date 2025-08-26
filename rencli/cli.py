@@ -4,6 +4,7 @@ from pathlib import Path
 
 from .core import RenCLI
 
+
 def cli_main():
     RenCLI.banner()
     parser = argparse.ArgumentParser(

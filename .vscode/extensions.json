@@ -1,3 +1,8 @@
 {
-  "recommendations": ["EditorConfig.EditorConfig", "esbenp.prettier-vscode", "ms-python.python", "ms-python.debugpy"]
+  "recommendations": [
+    "EditorConfig.EditorConfig",
+    "esbenp.prettier-vscode",
+    "ms-python.python",
+    "ms-python.debugpy"
+  ]
 }

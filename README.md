@@ -9,7 +9,7 @@ RenCLI is a **Python library and CLI tool** designed to **automate file renaming
 | **Batch Rename**    | ✔           | Rename multiple files at once with a custom prefix.                           |
 | **Sorting Options** | ✔           | Rename files in alphabetical, newest, or oldest order.                        |
 | **Simulation Mode** | ✔           | Preview renaming changes without modifying files. No actual changes are made. |
-| **Library Support** | ✔           | Use RenCLI as a module in your Python scripts for automation.                  |
+| **Library Support** | ✔           | Use RenCLI as a module in your Python scripts for automation.                 |
 | **Cross-Platform**  | ✔           | Works seamlessly on Windows, macOS, and Linux.                                |
 
 ## **🛠️ Prerequisites**

@@ -129,7 +129,6 @@ Encountered a bug or have a great idea for a new feature? Create an issue [here]
 
 - **Bug Reports**:
   Include:
-
   - Steps to reproduce the issue.
   - Expected vs. actual behavior.
   - Relevant error logs or stack traces.
@@ -144,18 +143,15 @@ Encountered a bug or have a great idea for a new feature? Create an issue [here]
 To maintain a high-quality codebase, please follow these guidelines:
 
 1. **Coding Style**:
-
    - Use clean, consistent, and readable code.
    - Follow PEP 8 coding standards.
    - Use `black` for code formatting.
 
 2. **Commit Practices**:
-
    - Keep commits small and focused.
    - Write clear and meaningful commit messages.
 
 3. **Documentation**:
-
    - Update documentation for any changes that impact the project’s functionality or usage.
 
 4. **Testing**:
