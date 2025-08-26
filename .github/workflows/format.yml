@@ -1,0 +1,72 @@
+name: Format and Lint
+
+on:
+  push:
+    paths:
+      - "**/*"
+    branches:
+      - main
+  pull_request:
+    paths:
+      - "**/*"
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  formatLint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Configure Prettier
+        run: |
+          echo '.github' > .prettierignore
+
+      - name: Install Prettier with plugins
+        run: |
+          npm i -D prettier
+
+      - name: Format JSON and Markdown
+        run: |
+          npx prettier -w **/*.{md,json}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install Flake8 and Black
+        run: |
+          pip install flake8 black
+
+      - name: format python
+        run: |
+          black .
+
+      - name: lint python
+        run: |
+          flake8 . --config .flake8
+
+      - name: Clean up unnecessary files
+        run: |
+          rm -rf node_modules
+          rm -f .prettierignore
+          rm -f package-lock.json
+
+      - name: Commit changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add .
+          git diff --quiet && git diff --staged --quiet || git commit -m "Action:formatLint"
+          git push

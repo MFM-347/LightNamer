@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[project]
+name = "rencli"
+version = "1.0.0"
+description="RenCLI is a CLI tool for renaming 100s of files in seconds."
+readme = "README.md"
+authors = [{ name = "Farhan Madni", email = "madnifm347@outlook.com" }]
+license-files = ["LICENSE*"]
+classifiers = [
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+]
+keywords = ["renamer", "cli", "auto", "automation", "automatic", "python", "opensource"]
+dependencies = [
+  "pyfiglet"
+]
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+dev = ["black", "flake8", "bumpver", "isort"]
+
+[project.urls]
+Homepage = "https://github.com/MFM-347/Ren.py"
+
+[project.scripts]
+rencli = "rencli.cli:cli_main"
