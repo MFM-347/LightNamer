@@ -1,7 +1,3 @@
 {
-  "recommendations": [
-    "EditorConfig.EditorConfig",
-    "ms-python.python",
-    "ms-python.debugpy"
-  ]
+  "recommendations": ["EditorConfig.EditorConfig", "ms-python.python", "ms-python.debugpy"]
 }
