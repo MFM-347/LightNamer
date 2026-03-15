@@ -1,14 +1,11 @@
 {
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
-    ".prettierrc.json": ".editorconfig, .flake8",
-    "README.md": "CONTRIBUTING.md, LICENSE"
+    ".editorconfig": ".prettierrc, .flake8"
   },
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit"
   },
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "python.testing.unittestArgs": ["-v", "-s", "./tests", "-p", "test_*.py"],
   "python.testing.pytestEnabled": false,
   "python.testing.unittestEnabled": true
