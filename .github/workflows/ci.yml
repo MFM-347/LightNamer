@@ -2,13 +2,9 @@ name: Format and Lint
 
 on:
   push:
-    paths:
-      - '**/*'
     branches:
       - main
   pull_request:
-    paths:
-      - '**/*'
     branches:
       - main
   workflow_dispatch:
