@@ -1,5 +1,9 @@
 # **LightNamer: CLI & Library for Auto Renaming** 🚀
 
+![PyPI - Downloads](https://img.shields.io/pypi/dm/lightnamer)
+![PyPI - Version](https://img.shields.io/pypi/v/lightnamer)
+[![License MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/MFM-347/LightNamer/LICENSE)
+
 LightNamer is a **Python library and CLI tool** designed to **automate file renaming** in a given directory. It sequentially renames files using a specified **base name**, appending a numeric index while preserving the original file extension.
 
 ## **📌 Features**
@@ -175,5 +179,3 @@ Created and maintained by [MFM-347](https://github.com/MFM-347).
 ## **📜 License**
 
 This project is licensed under the **MIT License**.
-
-[![License MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/MFM-347/LightNamer/LICENSE)
