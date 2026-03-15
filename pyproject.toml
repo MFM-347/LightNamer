@@ -23,3 +23,4 @@ Homepage = "https://github.com/MFM-347/LightNamer"
 
 [project.scripts]
 lightnamer = "lightnamer.cli:cli_main"
+lnamer = "lightnamer.cli:cli_main"
