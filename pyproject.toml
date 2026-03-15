@@ -3,7 +3,7 @@ requires = ["setuptools", "wheel"]
 
 [project]
 name = "lightnamer"
-version = "1.0.0"
+version = "1.0.1"
 description="LightNamer is a CLI tool for renaming 100s of files in seconds."
 readme = "README.md"
 authors = [{ name = "Farhan Madni", email = "madnifm347@outlook.com" }]
